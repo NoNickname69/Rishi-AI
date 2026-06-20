@@ -1,0 +1,222 @@
+[
+    {
+        "document_id": "brahma_sutra.sankara.swami_vireswarananda",
+        "title": "Brahma Sutras According to Sri Sankara",
+        "category": "Commentary",
+        "document_kind": "scripture_with_commentary",
+        "quality_score": 5.0,
+        "pdf_path": "C:\\Rishi AI\\storage\\raw\\commentaries\\adi_shankaracharya\\brahma_sutras\\swami_vireswarananda_1936\\document.pdf",
+        "metadata_path": "C:\\Rishi AI\\storage\\raw\\commentaries\\adi_shankaracharya\\brahma_sutras\\swami_vireswarananda_1936\\metadata.json",
+        "file_size": 26748563,
+        "sha256": "a85a1637aa664b83f066bb8a1daa4f6b6bc11f30e6d86de2b3c63fa5cdd50c69"
+    },
+    {
+        "document_id": "sanskrit_english_glossary.balu_saravana_sarma",
+        "title": "Sanskrit-English Dictionary",
+        "category": "Dictionary",
+        "document_kind": "dictionary",
+        "quality_score": 4.5,
+        "pdf_path": "C:\\Rishi AI\\storage\\raw\\dictionaries\\balu_saravana_sarma\\document.pdf",
+        "metadata_path": "C:\\Rishi AI\\storage\\raw\\dictionaries\\balu_saravana_sarma\\metadata.json",
+        "file_size": 662443,
+        "sha256": "c5492e496f18d51fb5887044c649d2a656f6c6fc7921def44e0f34f360e0ce7c"
+    },
+    {
+        "document_id": "bhagavad_gita.narasingha.en.2022",
+        "title": "Bhagavad Gita",
+        "category": "Scripture",
+        "document_kind": "scripture_with_commentary",
+        "quality_score": null,
+        "pdf_path": "C:\\Rishi AI\\storage\\raw\\scriptures\\gita\\bg_narasingha\\document.pdf",
+        "metadata_path": "C:\\Rishi AI\\storage\\raw\\scriptures\\gita\\bg_narasingha\\metadata.json",
+        "file_size": 7258047,
+        "sha256": "fee82bcb8077e10ac1eb54e3c129db010e5a8db237568c9efd3cc8ca9e504aed"
+    },
+    {
+        "document_id": "bhagavad_gita.ttd_raghavendra.en.2023",
+        "title": "The Bhagavad Gita",
+        "category": "Scripture",
+        "document_kind": "scripture_with_commentary",
+        "quality_score": 5,
+        "pdf_path": "C:\\Rishi AI\\storage\\raw\\scriptures\\gita\\raghavendra\\document.pdf",
+        "metadata_path": "C:\\Rishi AI\\storage\\raw\\scriptures\\gita\\raghavendra\\metadata.json",
+        "file_size": 9847933,
+        "sha256": "28428a5014e76a609ebe1855d2602445f4ffb0f466bafde4b5a7e22aa9c89b2c"
+    },
+    {
+        "document_id": "bhagavad_gita.sivananda.en.2000",
+        "title": "Bhagavad Gita",
+        "category": "Scripture",
+        "document_kind": "scripture_with_commentary",
+        "quality_score": 5,
+        "pdf_path": "C:\\Rishi AI\\storage\\raw\\scriptures\\gita\\sivananda\\document.pdf",
+        "metadata_path": "C:\\Rishi AI\\storage\\raw\\scriptures\\gita\\sivananda\\metadata.json",
+        "file_size": 368157,
+        "sha256": "744db0b88be6ed67479f2b6f00af9f5ed98376700fe2fb8a7cd8f9e1f0be6853"
+    },
+    {
+        "document_id": "mahabharata.ganguli.en",
+        "title": "The Mahabharata",
+        "category": "Itihasa",
+        "document_kind": "itihasa",
+        "quality_score": 4.9,
+        "pdf_path": "C:\\Rishi AI\\storage\\raw\\scriptures\\mahabharata\\document.pdf",
+        "metadata_path": "C:\\Rishi AI\\storage\\raw\\scriptures\\mahabharata\\metadata.json",
+        "file_size": 19969973,
+        "sha256": "ffb659cbefb7c25473c2ff66ecb44ebec868273c7d39847397b395ce4ae48903"
+    },
+    {
+        "document_id": "vivekachudamani.madhavananda.en",
+        "title": "Vivekachudamani",
+        "category": "Advaita Vedanta",
+        "document_kind": "prakarana_grantha",
+        "quality_score": 5.0,
+        "pdf_path": "C:\\Rishi AI\\storage\\raw\\scriptures\\prakarana_granthas\\vivekachudamani\\madhavananda\\document.pdf",
+        "metadata_path": "C:\\Rishi AI\\storage\\raw\\scriptures\\prakarana_granthas\\vivekachudamani\\madhavananda\\metadata.json",
+        "file_size": 163360,
+        "sha256": "d4c396e7c0334124179651b799835e05895c2dabc3e379630abb16d2faa101ae"
+    },
+    {
+        "document_id": "ramayana.valmiki.griffith.en",
+        "title": "The Ramayana of Valmiki",
+        "category": "Itihasa",
+        "document_kind": "itihasa",
+        "quality_score": 4.7,
+        "pdf_path": "C:\\Rishi AI\\storage\\raw\\scriptures\\ramayana\\document.pdf",
+        "metadata_path": "C:\\Rishi AI\\storage\\raw\\scriptures\\ramayana\\metadata.json",
+        "file_size": 6135377,
+        "sha256": "3938bd2052407441ca5ded57c8771c2f6c8a4575a69c90dd473c0b7b0d2630f7"
+    },
+    {
+        "document_id": "aitareya_upanishad.commentary.gurubhaktananda",
+        "title": "Aitareya Upanishad",
+        "category": "Vedanta",
+        "document_kind": "commentary",
+        "quality_score": 4.3,
+        "pdf_path": "C:\\Rishi AI\\storage\\raw\\scriptures\\upanishads\\aitareya\\document.pdf",
+        "metadata_path": "C:\\Rishi AI\\storage\\raw\\scriptures\\upanishads\\aitareya\\metadata.json",
+        "file_size": 2567343,
+        "sha256": "7f20a5087874fd1dac55c5b1560c37ae7bba1c566921338e628c14f7bf417c32"
+    },
+    {
+        "document_id": "brihadaranyaka_upanishad.translation.nikhilananda",
+        "title": "Brihadaranyaka Upanishad",
+        "category": "Vedanta",
+        "document_kind": "translation",
+        "quality_score": 4.9,
+        "pdf_path": "C:\\Rishi AI\\storage\\raw\\scriptures\\upanishads\\brihadaranyaka\\document.pdf",
+        "metadata_path": "C:\\Rishi AI\\storage\\raw\\scriptures\\upanishads\\brihadaranyaka\\metadata.json",
+        "file_size": 180222,
+        "sha256": "3ac1d9079003bc0ceef0524e682f3e288431542beeeeaeadecdd99f7b946dbb4"
+    },
+    {
+        "document_id": "chandogya_upanishad.translation.nikhilananda",
+        "title": "Chandogya Upanishad",
+        "category": "Vedanta",
+        "document_kind": "translation",
+        "quality_score": 4.8,
+        "pdf_path": "C:\\Rishi AI\\storage\\raw\\scriptures\\upanishads\\chandogya\\document.pdf",
+        "metadata_path": "C:\\Rishi AI\\storage\\raw\\scriptures\\upanishads\\chandogya\\metadata.json",
+        "file_size": 184945,
+        "sha256": "25e5dba05f973149ecae7ee4a96a2aae919d379e1acaed471b9427afaf9aee9b"
+    },
+    {
+        "document_id": "isha_upanishad.aurobindo.en.2003",
+        "title": "Isha Upanishad",
+        "category": "Upanishad",
+        "document_kind": "primary_scripture_with_commentary",
+        "quality_score": 5,
+        "pdf_path": "C:\\Rishi AI\\storage\\raw\\scriptures\\upanishads\\isha\\document.pdf",
+        "metadata_path": "C:\\Rishi AI\\storage\\raw\\scriptures\\upanishads\\isha\\metadata.json",
+        "file_size": 1882090,
+        "sha256": "c017574c7e848330291036d67ed221e30493286e712ab3bda0a6af81923a4b24"
+    },
+    {
+        "document_id": "katha_upanishad.gurubhaktananda.en.2018",
+        "title": "Katha Upanishad",
+        "category": "Upanishad",
+        "document_kind": "study_commentary",
+        "quality_score": 5,
+        "pdf_path": "C:\\Rishi AI\\storage\\raw\\scriptures\\upanishads\\katha\\document.pdf",
+        "metadata_path": "C:\\Rishi AI\\storage\\raw\\scriptures\\upanishads\\katha\\metadata.json",
+        "file_size": 3296848,
+        "sha256": "9e901002d56258e899acfb01f2f1942f847e6da6a012e5e0e36259a097c8a829"
+    },
+    {
+        "document_id": "kena_upanishad.gurubhaktananda.en.2019",
+        "title": "Kena Upanishad: Know That Alone as Brahman",
+        "category": "Upanishad",
+        "document_kind": "study_commentary",
+        "quality_score": 5,
+        "pdf_path": "C:\\Rishi AI\\storage\\raw\\scriptures\\upanishads\\kena\\document.pdf",
+        "metadata_path": "C:\\Rishi AI\\storage\\raw\\scriptures\\upanishads\\kena\\metadata.json",
+        "file_size": 1680001,
+        "sha256": "f48c1472b24f1ecfd1ae776744070c8f0ccd077167b157e53fc1f742791ab87d"
+    },
+    {
+        "document_id": "mandukya_karika.translation.nikhilananda",
+        "title": "Mandukya Upanishad with Gaudapada Karika",
+        "category": "Vedanta",
+        "document_kind": "karika",
+        "quality_score": 5.0,
+        "pdf_path": "C:\\Rishi AI\\storage\\raw\\scriptures\\upanishads\\mandukya\\document.pdf",
+        "metadata_path": "C:\\Rishi AI\\storage\\raw\\scriptures\\upanishads\\mandukya\\metadata.json",
+        "file_size": 77342,
+        "sha256": "d7d75219465c102c590c32f5992100b8f95221bc50958bb1f36e6a15603b5e4a"
+    },
+    {
+        "document_id": "mundaka_upanishad.gurubhaktananda.en.2019",
+        "title": "Mundaka Upanishad",
+        "category": "Upanishad",
+        "document_kind": "study_commentary",
+        "quality_score": 5,
+        "pdf_path": "C:\\Rishi AI\\storage\\raw\\scriptures\\upanishads\\mundaka\\document.pdf",
+        "metadata_path": "C:\\Rishi AI\\storage\\raw\\scriptures\\upanishads\\mundaka\\metadata.json",
+        "file_size": 2886968,
+        "sha256": "3199684078ff2d17ad4a268999cf0ed91f4ad966b662a91bb540a0a6b67ed5f3"
+    },
+    {
+        "document_id": "prashna_upanishad.gurubhaktananda.en.2017",
+        "title": "Prashna Upanishad",
+        "category": "Upanishad",
+        "document_kind": "study_commentary",
+        "quality_score": 5,
+        "pdf_path": "C:\\Rishi AI\\storage\\raw\\scriptures\\upanishads\\prashna\\document.pdf",
+        "metadata_path": "C:\\Rishi AI\\storage\\raw\\scriptures\\upanishads\\prashna\\metadata.json",
+        "file_size": 2841168,
+        "sha256": "459fdc8a9508d99ab2dba2508af5a4535be48d7d296237615cc8c029f0fe484b"
+    },
+    {
+        "document_id": "taittiriya_upanishad.translation.en",
+        "title": "Taittiriya Upanishad",
+        "category": "Vedanta",
+        "document_kind": "primary_scripture",
+        "quality_score": 4.8,
+        "pdf_path": "C:\\Rishi AI\\storage\\raw\\scriptures\\upanishads\\taittiriya\\document.pdf",
+        "metadata_path": "C:\\Rishi AI\\storage\\raw\\scriptures\\upanishads\\taittiriya\\metadata.json",
+        "file_size": 1743386,
+        "sha256": "adbe92ac90e9be001f9e4e6e06bf5377d6ffae1ef7d7ede60df358bc5436c2f9"
+    },
+    {
+        "document_id": "upanishad_vahini.sathya_sai_baba.en.1968",
+        "title": "Upanishad Vahini",
+        "category": "Vedanta",
+        "document_kind": "spiritual_discourses",
+        "quality_score": 4,
+        "pdf_path": "C:\\Rishi AI\\storage\\raw\\scriptures\\upanishads\\upanishad_vahini\\document.pdf",
+        "metadata_path": "C:\\Rishi AI\\storage\\raw\\scriptures\\upanishads\\upanishad_vahini\\metadata.json",
+        "file_size": 718173,
+        "sha256": "8831760bf505ad529fa65b936397ee8e4c021f0a0e982e2e48ac225be476bb96"
+    },
+    {
+        "document_id": "yoga_sutras.vivekananda.en",
+        "title": "Patanjali Yoga Sutras",
+        "category": "Yoga",
+        "document_kind": "scripture_with_commentary",
+        "quality_score": 5.0,
+        "pdf_path": "C:\\Rishi AI\\storage\\raw\\scriptures\\yoga_sutras\\vivekanand\\document.pdf",
+        "metadata_path": "C:\\Rishi AI\\storage\\raw\\scriptures\\yoga_sutras\\vivekanand\\metadata.json",
+        "file_size": 1227102,
+        "sha256": "936749df236158869e27ac530b0fa30896a15666e82fc85fe0cd947223ba4051"
+    }
+]

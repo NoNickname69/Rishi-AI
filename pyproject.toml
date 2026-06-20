@@ -1,0 +1,15 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "rishi-ai"
+version = "0.1.0"
+description = "A production-grade Retrieval-Augmented Generation platform for structured knowledge repositories. First corpus: Ancient Indian philosophy and scriptures."
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = []
+
+
+[tool.setuptools.packages.find]
+include = ["app*"]
