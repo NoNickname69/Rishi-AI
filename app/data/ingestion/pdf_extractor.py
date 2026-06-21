@@ -17,22 +17,13 @@ def extract_pdf_text(pdf_path: Path, document_id: str) -> str:
         source = pdf_path.parent.name
 
         pages.append(
-            f"""<<<PAGE
-        page: {page_number}
-        source: {source}
-        >>>
-
-        {text.strip()}
-
-        """
+            f"<<<PAGE\n"
+            f"page: {page_num}\n"
+            f"source: {source}\n"
+            f">>>\n\n"
+            f"{text}\n"
         )
     
     document.close()
-    
-    document_header = f"""---
-    document_id: {document_id}
-    ---
 
-    """
-
-    return document_header + "\n".join(pages)
+    return "\n".join(pages)

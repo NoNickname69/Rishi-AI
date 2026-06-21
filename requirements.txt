@@ -1,2 +1,5 @@
 pymupdf
 pydantic>=2
+numpy
+sentence-transformers
+chromadb
