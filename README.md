@@ -2,9 +2,11 @@
 
 > **An AI-powered knowledge and research platform for Hindu scriptures, philosophy, history, and culture.**
 
-Vedanta AI is an open-source Retrieval-Augmented Generation (RAG) platform designed to make the wisdom of Hindu scriptures accessible through modern AI.
+Rishi AI is an open-source Retrieval-Augmented Generation (RAG) platform designed to make the wisdom of Hindu scriptures accessible through modern AI.
 
-Unlike a traditional chatbot, Vedanta AI is being built as a **structured knowledge engine** capable of understanding, connecting, and explaining concepts across scriptures, commentaries, historical sources, and academic research while providing transparent citations for every answer.
+Unlike a traditional chatbot, Rishi AI is being built as a **structured knowledge engine** capable of understanding, connecting, and explaining concepts across scriptures, commentaries, historical sources, and academic research while providing transparent citations for every answer.
+
+**Version:** v0.2.0
 
 ---
 
@@ -12,7 +14,7 @@ Unlike a traditional chatbot, Vedanta AI is being built as a **structured knowle
 
 To build the world's most comprehensive AI platform for exploring Hindu scriptures, philosophy, history, and culture.
 
-Vedanta AI aims to become the equivalent of **NotebookLM + Perplexity + ChatGPT**, specialized for Indic knowledge.
+Rishi AI aims to become the equivalent of **NotebookLM + Perplexity + ChatGPT**, specialized for Indic knowledge.
 
 ---
 
@@ -65,7 +67,7 @@ Vedanta AI aims to become the equivalent of **NotebookLM + Perplexity + ChatGPT*
 
 # 🏗 Project Philosophy
 
-Vedanta AI is **not just another chatbot.**
+Rishi AI is **not just another chatbot.**
 
 It is being designed as a structured knowledge platform where AI serves as an interface to a rich, interconnected knowledge base.
 
@@ -112,7 +114,7 @@ The project prioritizes:
 # 📂 Project Structure
 
 ```text
-vedanta-ai/
+Rishi-ai/
 
 ├── backend/
 ├── frontend/
@@ -253,7 +255,7 @@ Every answer should:
 
 Contributions, feedback, and discussions are welcome.
 
-If you're interested in Hindu scriptures, AI, software engineering, linguistics, or digital humanities, we'd love to have your help in building Vedanta AI.
+If you're interested in Hindu scriptures, AI, software engineering, linguistics, or digital humanities, we'd love to have your help in building Rishi AI.
 
 ---
 

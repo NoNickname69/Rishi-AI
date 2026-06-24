@@ -125,3 +125,5 @@ storage/exports/
 *.bak
 
 storage/raw/
+
+storage/embeddings.npy

@@ -58,5 +58,5 @@ class FixedChunker(BaseChunker):
 
             start += self.chunk_size - self.overlap
 
-            return chunks
+        return chunks
          

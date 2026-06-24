@@ -16,12 +16,18 @@
 
 ## 🚧 Phase 2 — Retrieval
 
+### ✅ Completed
+
+- [x] BM25 lexical retrieval
+- [x] Metadata filtering
+- [x] Reciprocal Rank Fusion (RRF)
+- [x] Hybrid retrieval
+
+### 🔜 Remaining
+
 - [ ] Scripture-aware chunking
 - [ ] OCR pipeline
-- [ ] Hybrid retrieval
-- [ ] BM25
-- [ ] Cross Encoder reranking
-- [ ] Metadata filtering
+- [ ] Cross-Encoder reranking
 
 ---
 

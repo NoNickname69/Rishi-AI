@@ -8,7 +8,7 @@ class BaseEmbedder(ABC):
     @abstractmethod
     def embed(
         self,
-        texts: list[str],
+        text: list[str],
     ) -> np.ndarray:
         """
         Generate embeddings.

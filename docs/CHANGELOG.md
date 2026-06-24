@@ -1,5 +1,36 @@
 # Changelog
 
+All notable changes to this project will be documented in this file.
+
+---
+
+## [0.2.0] - 2026-06-25
+
+### Added
+- BM25 lexical retrieval
+- Query preprocessing with NLTK stopword removal
+- Reciprocal Rank Fusion (RRF)
+- HybridRetriever
+- Metadata-aware Chroma retrieval
+- Manual smoke tests
+
+### Improved
+- Query model with metadata filters
+- Chroma vector store
+- Documentation and comments
+
+---
+
+## [0.1.0] - 2026-06-20
+
+### Added
+- PDF ingestion pipeline
+- Document cleaning
+- Fixed-size chunking
+- Sentence Transformer embeddings
+- ChromaDB indexing
+- Semantic retrieval
+
 ## v0.1.1 - Phase 1 Foundation
 
 ### Repository

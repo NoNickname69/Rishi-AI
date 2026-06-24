@@ -1,5 +1,6 @@
-from sentence_transformers import SentenceTransformer
+import numpy as np
 
+from sentence_transformers import SentenceTransformer
 from app.data.embeddings.base import BaseEmbedder
 
 
@@ -9,13 +10,26 @@ class SentenceTransformerEmbedder(BaseEmbedder):
         self,
         model_name: str = "BAAI/bge-small-en-v1.5",
     ):
-
         self.model = SentenceTransformer(model_name)
 
-    def embed(self, texts):
+    def embed(
+        self,
+        texts: list[str],
+    ) -> np.ndarray:
 
         return self.model.encode(
             texts,
             normalize_embeddings=True,
             show_progress_bar=True,
+        )
+
+    def embed_query(
+        self,
+        text: str,
+    ) -> np.ndarray:
+
+        return self.model.encode(
+            text,
+            normalize_embeddings=True,
+            show_progress_bar=False,
         )
