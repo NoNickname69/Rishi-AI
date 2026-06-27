@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "rishi-ai"
-version = "0.2.1"
+version = "0.2.2"
 description = "A production-grade Retrieval-Augmented Generation platform for structured knowledge repositories. First corpus: Ancient Indian philosophy and scriptures."
 readme = "README.md"
 requires-python = ">=3.10"

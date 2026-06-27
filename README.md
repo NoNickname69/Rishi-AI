@@ -6,7 +6,7 @@ Rishi AI is an open-source Retrieval-Augmented Generation (RAG) platform designe
 
 Unlike a traditional chatbot, Rishi AI is being built as a **structured knowledge engine** capable of understanding, connecting, and explaining concepts across scriptures, commentaries, historical sources, and academic research while providing transparent citations for every answer.
 
-**Version:** v0.2.1
+**Version:** v0.2.2
 
 ---
 

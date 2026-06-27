@@ -25,14 +25,15 @@ class CrossEncoderReranker(BaseReranker):
     
     def rerank(
             self,
-        query: Query,
-        results: list[SearchResult],
+            query: Query,
+            results: list[SearchResult],
+            #top_k=None, # For future improvements
     ) -> list[SearchResult]:
         
         if not results:
             return []
         
-        pairs = [
+        pairs: list[tuple[str, str]] = [
             (query.text, result.text)
             for result in results
         ]
@@ -40,7 +41,7 @@ class CrossEncoderReranker(BaseReranker):
         scores = self.model.predict(pairs)
 
         for result, score in zip(results, scores):
-            result.score = float(score)
+            result.score = float(score) # Convert NumPy scalar to native Python float.s
 
         return sorted(
             results,

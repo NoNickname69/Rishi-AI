@@ -3,6 +3,26 @@
 All notable changes to this project will be documented in this file.
 
 ---
+
+## v0.2.2
+
+### ✨ Added
+
+- CrossEncoderReranker for retrieval reranking
+- BaseReranker abstraction
+- Integration of reranking into HybridRetriever
+
+### 🧪 Testing
+
+- Added end-to-end reranking smoke test
+
+### 🏗️ Improvements
+
+- Retrieval pipeline now supports optional reranking
+- Improved modular retrieval architecture
+
+---
+
 ## v0.2.1
 
 ### ✨ Added
@@ -19,7 +39,9 @@ All notable changes to this project will be documented in this file.
 
 - Improved chunking architecture with reusable helper methods
 - Better separation of chunking strategies
+
 ---
+
 ## [0.2.0] - 2026-06-25
 
 ### Added

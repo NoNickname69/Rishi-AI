@@ -32,10 +32,36 @@ hybrid_retriever = HybridRetriever(
 
 
 query = Query(
-    text="What is Brahman?",
+    text="What is Brahman according to the Upanishads?",
+    top_k=5,
 )
 
-results = hybrid_retriever.search(query)
+hybrid_without = HybridRetriever(
+    semantic_retriever=semantic_retriever,
+    bm25_retriever=bm25_retriever,
+)
+
+results = hybrid_without.search(query)
+
+print("\nRESULTS\n")
+
+for rank, result in enumerate(results, start=1):
+
+    print("=" * 80)
+
+    #print(f"Rank: {rank}")
+    #print(f"Score: {result.score:.4f}")
+    print(f"Document: {result.document_id}\n")
+
+    print(result.text[:700])
+
+hybrid_with = HybridRetriever(
+    semantic_retriever=semantic_retriever,
+    bm25_retriever=bm25_retriever,
+    reranker=reranker,
+)
+
+results = hybrid_with.search(query)
 
 print("\nRERANKED RESULTS\n")
 
