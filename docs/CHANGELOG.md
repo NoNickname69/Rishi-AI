@@ -3,7 +3,23 @@
 All notable changes to this project will be documented in this file.
 
 ---
+## v0.2.1
 
+### ✨ Added
+
+- RecursiveChunker with hierarchical text splitting
+- ChapterChunker for chapter-aware document chunking
+
+### 🧪 Testing
+
+- Added smoke tests for RecursiveChunker
+- Added smoke tests for ChapterChunker
+
+### 🏗️ Improvements
+
+- Improved chunking architecture with reusable helper methods
+- Better separation of chunking strategies
+---
 ## [0.2.0] - 2026-06-25
 
 ### Added
