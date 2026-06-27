@@ -12,22 +12,27 @@ from app.models.domain.search_result import SearchResult
 from app.retrieval.search.fusion import ReciprocalRankFusion
 from app.retrieval.search.bm25 import BM25Retriever
 from app.retrieval.search.semantic import SemanticRetriever
+from app.retrieval.rerankers.cross_encoder import CrossEncoderReranker
 
 
 class HybridRetriever:
     """
-    Combines semantic and lexical (BM25) retrieval results via Reciprocal Rank Fusion.
+    Combines semantic and lexical retrieval using Reciprocal Rank Fusion (RRF),
+    then applies a Cross Encoder reranker to produce the final ranked results.
     """
     def __init__(
             
             self,
             semantic_retriever: SemanticRetriever,
             bm25_retriever: BM25Retriever,
+            reranker: CrossEncoderReranker,
     ):
         self.semantic_retriever = semantic_retriever
         self.bm25_retriever = bm25_retriever
 
         self.fusion = ReciprocalRankFusion()
+
+        self.reranker = reranker
 
     def search(
             self,
@@ -61,11 +66,17 @@ class HybridRetriever:
             retrieval_query
         )
 
-        # Fusion is what trims results back down to the user-requested query.top_k
+        # Merge results from both retrievers before reranking.
         fused_results = self.fusion.fuse(
             semantic_results,
             bm25_results,
             top_k=query.top_k,
         )
 
-        return fused_results
+        reranked_results = self.reranker.rerank(
+            query=query,
+            results=fused_results,
+        )
+        
+        # Return only the highest-ranked results requested by the user.
+        return reranked_results[: query.top_k]
