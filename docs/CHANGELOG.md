@@ -4,6 +4,27 @@ All notable changes to this project will be documented in this file.
 
 ---
 
+## v0.2.3
+
+### ✨ Added
+
+- Introduced `BaseOCR` abstraction.
+- Added `RapidOCRProcessor` implementation.
+- Integrated OCR fallback into the PDF ingestion pipeline.
+- Added support for extracting text from scanned PDFs.
+
+### 🏗️ Improvements
+
+- OCR is now decoupled from document ingestion through dependency inversion.
+- Native PDF text extraction remains the primary path, with OCR used only when needed.
+- Improved resource management using context managers for PDF handling.
+
+### 🧪 Testing
+
+- Verified OCR extraction on a 614-page scanned edition of the Brahma Sutras (1936).
+
+---
+
 ## v0.2.2
 
 ### ✨ Added

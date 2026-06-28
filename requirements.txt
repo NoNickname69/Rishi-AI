@@ -5,3 +5,5 @@ sentence-transformers
 chromadb
 rank_bm25
 nltk
+pillow
+rapidocr_onnxruntime
