@@ -7,9 +7,9 @@ from app.models.domain.query import Query
 from app.models.domain.search_result import SearchResult
 from app.models.domain.chunk import Chunk
 from app.retrieval.search.preprocess import preprocess_query
+from app.retrieval.base import BaseRetriever
 
-
-class BM25Retriever:
+class BM25Retriever(BaseRetriever):
     """
     Lexical retriever using BM25 ranking over chunks loaded from disk.
     """

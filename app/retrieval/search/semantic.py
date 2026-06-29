@@ -2,8 +2,9 @@ from app.data.embeddings.base import BaseEmbedder
 from app.models.domain.query import Query
 from app.models.domain.search_result import SearchResult
 from app.retrieval.vectorstores.base import BaseVectorStore
+from app.retrieval.base import BaseRetriever
 
-class SemanticRetriever:
+class SemanticRetriever(BaseRetriever):
     """
     Retrieves chunks by embedding the query and performing vector similarity search.
     """

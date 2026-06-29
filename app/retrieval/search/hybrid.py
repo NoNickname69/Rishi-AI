@@ -13,9 +13,9 @@ from app.retrieval.search.fusion import ReciprocalRankFusion
 from app.retrieval.search.bm25 import BM25Retriever
 from app.retrieval.search.semantic import SemanticRetriever
 from app.retrieval.rerankers.base import BaseReranker
+from app.retrieval.base import BaseRetriever
 
-
-class HybridRetriever:
+class HybridRetriever(BaseRetriever):
     """
     Combines semantic and lexical retrieval using Reciprocal Rank Fusion (RRF),
     then applies an optional reranker to produce the final result.

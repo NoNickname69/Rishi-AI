@@ -3,6 +3,31 @@
 All notable changes to this project will be documented in this file.
 
 ---
+## [v0.2.4] - 2026-06-29
+
+### ✨ Added
+
+* Added a complete retrieval evaluation framework.
+* Implemented `Precision@K` for measuring retrieval accuracy.
+* Implemented `Recall@K` for measuring retrieval coverage.
+* Implemented `Reciprocal Rank` for ranking quality evaluation.
+* Added `Evaluator` for evaluating individual retrieval queries.
+* Added `Benchmark` for running evaluation suites over multiple queries.
+* Introduced `BaseRetriever` abstract interface to standardize retrieval implementations.
+* Added `BenchmarkResult` and evaluation data models.
+
+### 🧪 Testing
+
+* Added smoke tests for the complete benchmarking pipeline.
+* Verified end-to-end integration of retrieval, evaluation, and benchmarking components.
+
+### 🛠️ Improvements
+
+* Refactored retrieval architecture to use a common retriever interface.
+* Improved recall calculation by counting unique retrieved documents.
+* Added comprehensive documentation, comments, and type hints across the evaluation module.
+
+---
 
 ## v0.2.3
 
