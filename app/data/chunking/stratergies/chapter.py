@@ -92,8 +92,24 @@ class ChapterChunker(BaseChunker):
     ) -> list[Chunk]:
         
         """
-        Splits a document using chapter chunking and
-        converts the resulting text chunks into Chunk objects.
+        Build Chunk objects from sentences and semantic boundaries.
+
+        Parameters
+        ----------
+        sentences:
+            List of document sentences.
+
+        boundaries:
+            Boolean list where True indicates that a new chunk
+            should begin after the current sentence.
+
+        document_id:
+            Identifier of the source document.
+
+        Returns
+        -------
+        list[Chunk]
+            Semantic chunks for the document.
         """
 
         text_chunks = self.split_by_chapters(text)

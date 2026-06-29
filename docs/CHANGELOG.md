@@ -3,6 +3,23 @@
 All notable changes to this project will be documented in this file.
 
 ---
+
+## [0.2.5] - 2026-06-29
+
+### Added
+- Implemented Semantic Chunking strategy.
+- Added sentence-based semantic segmentation using embeddings.
+- Added cosine similarity boundary detection.
+- Added semantic chunk construction pipeline.
+- Added smoke tests for semantic chunking.
+- Added configurable similarity threshold for semantic segmentation.
+
+### Improved
+- Refined chunking architecture with modular helper methods.
+- Reused the common `Chunk` domain model across chunking strategies.
+
+---
+
 ## [v0.2.4] - 2026-06-29
 
 ### ✨ Added
