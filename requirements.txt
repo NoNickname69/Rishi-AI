@@ -7,3 +7,5 @@ rank_bm25
 nltk
 pillow
 rapidocr_onnxruntime
+groq
+python-dotenv

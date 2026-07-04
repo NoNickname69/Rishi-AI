@@ -4,6 +4,66 @@ All notable changes to this project will be documented in this file.
 
 ---
 
+# v0.3.0
+
+## 🚀 First End-to-End AI Pipeline
+
+Rishi AI generated its first grounded answer using the complete RAG pipeline.
+
+<p align="center">
+  <img src="images/v0.3.0-first-answer.png" width="900"/>
+</p>
+
+## 🎉 Major Milestone
+
+Rishi AI successfully generated its first grounded response using
+its complete Retrieval-Augmented Generation pipeline.
+
+This marks the transition from an infrastructure project to a
+functional AI knowledge engine.
+s
+### Highlights
+
+- ✅ Prompt Builder
+- ✅ Groq Integration
+- ✅ Hybrid Retrieval
+- ✅ Cross Encoder Reranking
+- ✅ Citation Support
+- ✅ First Grounded Response
+
+
+## Technical Pipeline
+
+Question
+
+↓
+SentenceTransformer
+
+↓
+Chroma Vector Search
+
+↓
+BM25 Retrieval
+
+↓
+Reciprocal Rank Fusion
+
+↓
+Cross Encoder Reranking
+
+↓
+Prompt Builder
+
+↓
+Groq
+
+↓
+Grounded Answer
+
+↓
+Citations
+
+---
 ## [0.2.5] - 2026-06-29
 
 ### Added
