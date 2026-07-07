@@ -1,6 +1,7 @@
 from app.ai.generation.pipeline import RAGPipeline
 from app.ai.generation.groq import GroqGenerator
 from app.ai.prompts.builder import PromptBuilder
+from app.ai.formatting.formatter import ResponseFormatter
 
 from app.data.embeddings.sentence_transformer import (
     SentenceTransformerEmbedder,
@@ -48,18 +49,8 @@ answer = pipeline.answer(
     "Who is Brahman?"
 )
 
-print("=" * 80)
+formatter = ResponseFormatter()
 
-print(answer.answer)
-
-print()
-
-print("Confidence")
-print(answer.confidence)
-
-print()
-
-print("Sources")
-
-for source in answer.citations:
-    print("-", source)
+print(
+    formatter.format(answer)
+)

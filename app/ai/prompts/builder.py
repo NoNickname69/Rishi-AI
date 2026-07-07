@@ -32,12 +32,21 @@ USER QUESTION
 INSTRUCTION
 ========================
 
-Answer using ONLY provided context.
+Respond using the following structure.
 
-If the answer cannot be found in the provided context,
-Say you don't know.
+1. Direct Answer
 
-At the end, mention which sources were used.
+2. Explanation
+
+3. Sources Used
+
+If the answer cannot be determined,
+say so clearly.
+
+If the context contains uncertainty,
+reflect that uncertainty in your answer.
+
+
 """
     
 

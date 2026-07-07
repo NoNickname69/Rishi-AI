@@ -4,6 +4,28 @@ All notable changes to this project will be documented in this file.
 
 ---
 
+# v0.3.1
+
+## ✨ Highlights
+
+This release improves the readability and presentation of Rishi AI responses.
+
+### Added
+
+- Response formatter for terminal output
+- Human-readable source names
+- Source deduplication
+- Improved prompt structure
+- Better formatted AI responses
+
+### Improved
+
+- Cleaner response layout
+- More consistent answer structure
+- Better citation presentation
+
+---
+
 # v0.3.0
 
 ## 🚀 First End-to-End AI Pipeline
