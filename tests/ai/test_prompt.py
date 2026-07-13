@@ -7,6 +7,8 @@ from app.data.embeddings.sentence_transformer import (
     SentenceTransformerEmbedder,
 )
 
+from app.corpus.registry import CorpusRegistry
+
 from app.retrieval.vectorstores.chroma import ChromaVectorStore
 
 from app.retrieval.search.semantic import SemanticRetriever
@@ -16,6 +18,11 @@ from app.retrieval.search.hybrid import HybridRetriever
 from app.retrieval.rerankers.cross_encoder import (
     CrossEncoderReranker,
 )
+
+registry = CorpusRegistry(
+    "storage/corpus_manifest.json"
+)
+
 embedder = SentenceTransformerEmbedder()
 
 vector_store = ChromaVectorStore()
@@ -43,6 +50,7 @@ pipeline = RAGPipeline(
     retriever=retriever,
     generator=generator,
     prompt_builder=builder,
+    corpus_registry=registry,
 )
 
 answer = pipeline.answer(

@@ -4,6 +4,40 @@ All notable changes to this project will be documented in this file.
 
 ---
 
+# v0.3.3 - Structured Responses
+
+<p align="center">
+  <img src="docs/images/v0.3.3.png" width="900"/>
+</p>
+
+## ✨ Added
+
+- Introduced structured JSON responses from the language model.
+- Added response schema validation.
+- Added custom `InvalidLLMResponseError` for invalid LLM outputs.
+- Integrated JSON parsing directly into the RAG pipeline.
+
+## ♻️ Refactored
+
+- Redesigned the `Answer` schema to use structured response fields.
+- Separated AI response generation from presentation logic.
+- Updated the formatter to render structured answer sections.
+- Improved source handling using `Source` domain objects.
+
+## 🧪 Validation
+
+The pipeline now validates:
+
+- JSON syntax returned by the LLM.
+- Required response fields (`direct_answer`, `explanation`).
+- Invalid responses before constructing the final `Answer` object.
+
+## 🚀 Result
+
+Rishi AI now treats LLM responses as structured application data instead of plain text. This provides a robust foundation for future web interfaces, APIs, LangGraph workflows, and agentic systems.
+
+---
+
 # v0.3.2 - Source Registry
 
 ## ✨ Added

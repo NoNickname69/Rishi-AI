@@ -1,4 +1,6 @@
 from app.ai.schemas.answer import Answer
+from app.corpus.source import Source
+
 
 
 class ResponseFormatter:
@@ -30,19 +32,25 @@ class ResponseFormatter:
         return f"""
 {'═' * 60}
 
-Answer
+♥ Direct Answer:
 
-{answer.answer}
+{answer.direct_answer}
 
 {'═' * 60}
 
-Sources
+☺ Explanation:
 
+{answer.explanation}
+
+{'═' * 60}
+
+
+☻ Sources
 {self._format_sources(answer.sources)}
 
 {'═' * 60}
 
-Confidence
+• Confidence
 
 {answer.confidence:.2f}
 
@@ -55,18 +63,28 @@ Confidence
             answer: Answer,
     ) -> str:
         
-        return answer.answer
+        return f"{answer.direct_answer}\n\n{answer.explanation}"
     
 
     def _format_sources(
             self,
-            sources: list[str],
+            sources: list[Source],
     ) -> str:
         
         if not sources:
             return "No sources available."
         
+        unique = []
+        seen = set()
+
+        for source in sources:
+
+            if source.document_id not in seen:
+
+                seen.add(source.document_id)
+                unique.append(source)
+        
         return "\n".join(
         f" ♥ {source.title}"
-        for source in sources
+        for source in unique
     )

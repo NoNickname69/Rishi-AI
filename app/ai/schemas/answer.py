@@ -9,7 +9,9 @@ class Answer:
     Final response produced by Rishi AI.
     """
 
-    answer: str
+    direct_answer: str
+
+    explanation: str
 
     sources: list[Source]
 

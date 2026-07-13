@@ -1,8 +1,10 @@
 from app.ai.schemas.answer import Answer
 from app.ai.prompts.builder import PromptBuilder
 from app.ai.interfaces.generator import Generator
-from app.models.domain.search_result import SearchResult
 from app.models.domain.query import Query
+from app.ai.generation.exception import InvalidLLMResponseError
+
+import json
 
 class RAGPipeline:
     """
@@ -44,6 +46,29 @@ class RAGPipeline:
             prompt=prompt,
             )
         
+        try:
+
+            parsed = json.loads(response)
+        
+        except json.JSONDecodeError as e:
+
+            raise InvalidLLMResponseError(
+                "LLM returned invalid JSON."
+            ) from e
+
+        required_fields = {
+                "direct_answer",
+                "explanation",
+            }
+
+        if not required_fields.issubset(parsed):
+
+            missing = required_fields - parsed.keys()
+
+            raise InvalidLLMResponseError(
+                f"Missing required fields: {', '.join(sorted(missing))}"
+            )
+
         sources  = [
             self.corpus_registry.get(
                 result.document_id
@@ -58,7 +83,8 @@ class RAGPipeline:
         )
 
         return Answer(
-            answer=response,
+            direct_answer=parsed["direct_answer"],
+            explanation=parsed["explanation"],
             sources=sources,
             confidence=confidence,
             retrieved_results=results,
