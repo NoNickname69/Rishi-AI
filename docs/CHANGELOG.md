@@ -4,7 +4,39 @@ All notable changes to this project will be documented in this file.
 
 ---
 
-# v0.3.1
+# v0.3.2 - Source Registry
+
+## ✨ Added
+
+- Introduced the `Source` domain model to represent corpus documents.
+- Added `CorpusRegistry` for loading and managing corpus metadata.
+- Implemented fast document lookup using document IDs.
+- Added registry utility methods:
+  - `get()`
+  - `exists()`
+  - `all()`
+
+## ♻️ Refactored
+
+- Replaced raw document identifiers with `Source` objects.
+- Improved separation between corpus metadata and presentation logic.
+- Established a foundation for future citation and metadata features.
+
+## 🧪 Testing
+
+- Added comprehensive registry tests.
+- Verified:
+  - Manifest loading
+  - Source lookup
+  - Source existence checks
+  - Registry enumeration
+
+## 🚀 Result
+
+Rishi AI now treats corpus documents as structured domain objects instead of raw filename strings, laying the groundwork for richer citations and metadata-aware responses.
+
+---
+# v0.3.2
 
 ## ✨ Highlights
 

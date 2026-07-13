@@ -38,7 +38,7 @@ Answer
 
 Sources
 
-{self._format_sources(answer.citations)}
+{self._format_sources(answer.sources)}
 
 {'═' * 60}
 
@@ -60,36 +60,13 @@ Confidence
 
     def _format_sources(
             self,
-            citations: list[str],
+            sources: list[str],
     ) -> str:
         
-        if not citations:
+        if not sources:
             return "No sources available."
         
-        unique = []
-        seen = set()
-
-        for citation in citations:
-            
-            pretty = self._prettify_document(citation)
-
-            if pretty not in seen:
-
-                seen.add(pretty)
-                unique.append(pretty)
-
-
         return "\n".join(
-        f"{source}"
-        for source in unique
+        f" ♥ {source.title}"
+        for source in sources
     )
-
-    def _prettify_document(
-            self,
-            document: str,
-    ) -> str:
-
-        document = document.split(".")[0]
-        document = document.replace("_", " ")
-
-        return document.title()

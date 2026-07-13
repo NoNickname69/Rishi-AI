@@ -1,6 +1,7 @@
 from dataclasses import dataclass
 
 from app.models.domain.search_result import SearchResult
+from app.corpus.source import Source
 
 @dataclass(slots=True)
 class Answer:
@@ -10,7 +11,7 @@ class Answer:
 
     answer: str
 
-    citations: list[str]
+    sources: list[Source]
 
     confidence: float
 

@@ -14,11 +14,13 @@ class RAGPipeline:
             retriever,
             generator: Generator,
             prompt_builder: PromptBuilder,
+            corpus_registry,
     ):
 
         self.retriever = retriever
         self.generator = generator
         self.prompt_builder = prompt_builder
+        self.corpus_registry = corpus_registry
 
     def answer(
             self,
@@ -42,8 +44,10 @@ class RAGPipeline:
             prompt=prompt,
             )
         
-        citations  = [
-            result.document_id
+        sources  = [
+            self.corpus_registry.get(
+                result.document_id
+            )
             for result in results
         ]
 
@@ -55,7 +59,7 @@ class RAGPipeline:
 
         return Answer(
             answer=response,
-            citations=citations,
+            sources=sources,
             confidence=confidence,
             retrieved_results=results,
         )
