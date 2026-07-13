@@ -7,7 +7,7 @@ All notable changes to this project will be documented in this file.
 # v0.3.3 - Structured Responses
 
 <p align="center">
-  <img src="docs/images/v0.3.3.png" width="900"/>
+  <img src="images/v0.3.3.png" width="900"/>
 </p>
 
 ## ✨ Added
