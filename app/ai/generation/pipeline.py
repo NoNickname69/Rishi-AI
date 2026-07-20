@@ -16,7 +16,7 @@ class RAGPipeline:
             retriever,
             generator: Generator,
             prompt_builder: PromptBuilder,
-            corpus_registry,
+            corpus_registry = None,
     ):
 
         self.retriever = retriever
@@ -69,12 +69,17 @@ class RAGPipeline:
                 f"Missing required fields: {', '.join(sorted(missing))}"
             )
 
-        sources  = [
-            self.corpus_registry.get(
-                result.document_id
-            )
-            for result in results
-        ]
+        if self.corpus_registry is not None:
+            sources  = [
+                self.corpus_registry.get(
+                    result.document_id
+                )
+                for result in results
+            ]
+        
+        else:
+            
+            sources = []
 
         confidence = (
             sum(r.score for r in results) / len(results)

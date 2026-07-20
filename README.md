@@ -6,7 +6,7 @@ Rishi AI is an open-source Retrieval-Augmented Generation (RAG) platform designe
 
 Unlike a traditional chatbot, Rishi AI is being built as a **structured knowledge engine** capable of understanding, connecting, and explaining concepts across scriptures, commentaries, historical sources, and academic research while providing transparent citations for every answer.
 
-**Version:** v0.3.3
+**Version:** v0.4.0
 
 ---
 
@@ -17,6 +17,14 @@ To build the world's most comprehensive AI platform for exploring Hindu scriptur
 Rishi AI aims to become the equivalent of **NotebookLM + Perplexity + ChatGPT**, specialized for Indic knowledge.
 
 ---
+
+# Rishi AI
+
+AI-powered Retrieval-Augmented Generation (RAG) platform for Vedic knowledge.
+
+## Current UI
+
+![Rishi AI](docs/images/v0.4.0.png.png)
 
 ## 🚀 Features
 

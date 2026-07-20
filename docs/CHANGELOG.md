@@ -4,6 +4,40 @@ All notable changes to this project will be documented in this file.
 
 ---
 
+
+# [0.4.0] - 2026-07-21
+
+<p align="center">
+  <img src="images/v0.4.0.png" width="900"/>
+</p>
+
+### 🚀 Added
+
+- End-to-end Retrieval-Augmented Generation (RAG) pipeline
+- Streamlit frontend connected to the AI pipeline
+- PromptBuilder abstraction
+- Groq LLM integration
+- Structured JSON response validation
+- Typed Answer schema
+- Confidence score computation
+- Retrieved source display
+- Exception handling for invalid LLM responses
+
+### ♻ Changed
+
+- Refactored Streamlit UI to use RAGPipeline
+- Separated presentation layer from business logic
+- Improved modular AI architecture
+
+### 🛠 Internal
+
+- Generator interface abstraction
+- Pipeline orchestration
+- Prompt construction improvements
+- Cleaner dependency injection
+
+---
+
 # v0.3.3 - Structured Responses
 
 <p align="center">

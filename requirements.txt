@@ -9,3 +9,4 @@ pillow
 rapidocr_onnxruntime
 groq
 python-dotenv
+streamlit
