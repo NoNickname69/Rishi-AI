@@ -24,7 +24,11 @@ AI-powered Retrieval-Augmented Generation (RAG) platform for Vedic knowledge.
 
 ## Current UI
 
+<<<<<<< HEAD
 ![Rishi AI](docs/images/v0.4.0.png.png)
+=======
+![Rishi AI](docs/images/v0.4.0.png)
+>>>>>>> c46760e (feat(ai): integrate end-to-end RAG pipeline with Streamlit)
 
 ## 🚀 Features
 
